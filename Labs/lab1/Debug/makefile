@@ -84,8 +84,8 @@ all: main-build
 main-build: lab1.elf secondary-outputs
 
 # Tool invocations
-lab1.elf lab1.map: $(OBJS) $(USER_OBJS) \\CETSTUDENTS.AD.RIT.EDU\Students\dl4583\DiegoLopez_CPET461\Labs\lab1\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "lab1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"\\CETSTUDENTS.AD.RIT.EDU\Students\dl4583\DiegoLopez_CPET461\Labs\lab1\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+lab1.elf lab1.map: $(OBJS) $(USER_OBJS) X:\STM_workspace\lab1\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "lab1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"X:\STM_workspace\lab1\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
