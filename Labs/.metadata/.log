@@ -1,0 +1,36 @@
+!SESSION 2024-02-06 14:17:12.886 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\GitHub\CPET_461\Labs
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-06 14:17:24.491
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-06 14:17:24.515
+!MESSAGE Log4j2 initialized with config file C:\GitHub\CPET_461\Labs\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-06 14:17:29.789
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-06 14:17:55.676
+!MESSAGE Indexed 'Lab3' (38 sources, 191 headers) in 9.67 sec: 18,923 declarations; 91,300 references; 1 unresolved inclusions; 341 syntax errors; 1,203 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-06 14:22:01.055
+!MESSAGE Indexed 'Lab3.1' (38 sources, 191 headers) in 7.18 sec: 18,923 declarations; 91,316 references; 1 unresolved inclusions; 341 syntax errors; 1,203 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-06 14:23:43.457
+!MESSAGE Indexed 'Lab3.2' (38 sources, 193 headers) in 5.14 sec: 19,020 declarations; 91,459 references; 1 unresolved inclusions; 341 syntax errors; 1,203 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-06 14:25:36.604
+!MESSAGE Indexed 'Lab3.3' (38 sources, 193 headers) in 5.06 sec: 19,022 declarations; 91,465 references; 1 unresolved inclusions; 341 syntax errors; 1,203 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-06 14:35:20.367
+!MESSAGE Indexed 'lab1' (25 sources, 154 headers) in 3.86 sec: 12,815 declarations; 58,477 references; 2 unresolved inclusions; 46 syntax errors; 778 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-06 14:35:28.100
+!MESSAGE Indexed 'Lab2' (38 sources, 191 headers) in 4.56 sec: 18,916 declarations; 91,256 references; 1 unresolved inclusions; 341 syntax errors; 1,203 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-06 14:35:35.270
+!MESSAGE Indexed 'Lab2.1' (38 sources, 191 headers) in 5.17 sec: 18,920 declarations; 91,288 references; 1 unresolved inclusions; 341 syntax errors; 1,203 unresolved names (1.1%)
