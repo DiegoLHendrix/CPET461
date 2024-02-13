@@ -1,4 +1,363 @@
-16:30:19 **** Incremental Build of configuration Debug for project Lab3.3 ****
+14:40:23 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24220	    104	  18664	  42988	   a7ec	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:44:17 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24204	    104	  18664	  42972	   a7dc	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:45:00 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24220	    104	  18664	  42988	   a7ec	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:45:36 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24220	    104	  18664	  42988	   a7ec	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:47:30 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'flashLED':
+../Core/Src/main.c:487:22: warning: passing argument 1 of 'vTaskSuspend' makes pointer from integer without a cast [-Wint-conversion]
+  487 |         vTaskSuspend(1);
+      |                      ^
+      |                      |
+      |                      int
+In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:57,
+                 from ../Core/Src/main.c:21:
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:1069:33: note: expected 'TaskHandle_t' {aka 'struct tskTaskControlBlock *'} but argument is of type 'int'
+ 1069 | void vTaskSuspend( TaskHandle_t xTaskToSuspend ) PRIVILEGED_FUNCTION;
+      |                    ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24508	    104	  18664	  43276	   a90c	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:48:08 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'flashLED':
+../Core/Src/main.c:487:22: error: 'null' undeclared (first use in this function)
+  487 |         vTaskSuspend(null);
+      |                      ^~~~
+../Core/Src/main.c:487:22: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:48:13 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24508	    104	  18664	  43276	   a90c	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:48:23 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24508	    104	  18664	  43276	   a90c	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:49:34 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24508	    104	  18664	  43276	   a90c	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:49:56 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Access_Function':
+../Core/Src/main.c:501:22: warning: passing argument 1 of 'vTaskSuspend' makes pointer from integer without a cast [-Wint-conversion]
+  501 |         vTaskSuspend(1);
+      |                      ^
+      |                      |
+      |                      int
+In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:57,
+                 from ../Core/Src/main.c:21:
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:1069:33: note: expected 'TaskHandle_t' {aka 'struct tskTaskControlBlock *'} but argument is of type 'int'
+ 1069 | void vTaskSuspend( TaskHandle_t xTaskToSuspend ) PRIVILEGED_FUNCTION;
+      |                    ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24508	    104	  18664	  43276	   a90c	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:50:44 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24220	    104	  18664	  42988	   a7ec	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:51:26 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24220	    104	  18664	  42988	   a7ec	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:52:53 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24220	    104	  18664	  42988	   a7ec	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:53:22 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24220	    104	  18664	  42988	   a7ec	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:53:51 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24220	    104	  18664	  42988	   a7ec	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:54:47 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24524	    104	  18664	  43292	   a91c	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:55:22 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24524	    104	  18664	  43292	   a91c	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:55:44 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-size  Ex11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24524	    104	  18664	  43292	   a91c	Ex11.elf
+Finished building: default.size.stdout
+ 
+14:56:50 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24540	    104	  18664	  43308	   a92c	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:58:36 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24204	    104	  18664	  42972	   a7dc	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+14:59:20 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24492	    104	  18664	  43260	   a8fc	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+15:00:27 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24492	    104	  18664	  43260	   a8fc	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+15:02:01 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'StartFlashOrangeLedTask':
+../Core/Src/main.c:561:11: error: too many arguments to function 'flashLED'
+  561 |           flashLED(LED_ORANGE_Pin, 40);
+      |           ^~~~~~~~
+../Core/Src/main.c:478:6: note: declared here
+  478 | void flashLED(uint16_t color){//flashes LED for 4 seconds at 10Hz
+      |      ^~~~~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:02:06 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24616	    104	  18672	  43392	   a980	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+15:02:13 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-size  Ex11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24616	    104	  18672	  43392	   a980	Ex11.elf
+Finished building: default.size.stdout
+ 
+15:07:07 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-size  Ex11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24616	    104	  18672	  43392	   a980	Ex11.elf
+Finished building: default.size.stdout
+ 
+15:07:07 **** Build of configuration Debug for project Ex12 ****
 make -j8 all 
 arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
 arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o"
@@ -30,20 +389,191 @@ arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o"
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f411vetx.d" -MT"Core/Startup/startup_stm32f411vetx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f411vetx.o" "../Core/Startup/startup_stm32f411vetx.s"
 arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
 arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_timebase_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_timebase_tim.d" -MT"Core/Src/stm32f4xx_hal_timebase_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_timebase_tim.o"
 arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
 arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
-arm-none-eabi-g++ -o "Lab3.3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Lab3.3\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab3.3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Lab3.3.elf
+arm-none-eabi-g++ -o "Ex12.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex12\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex12.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex12.elf
  
-arm-none-eabi-size  Lab3.3.elf 
-arm-none-eabi-objdump -h -S Lab3.3.elf  > "Lab3.3.list"
+arm-none-eabi-size  Ex12.elf 
+arm-none-eabi-objdump -h -S Ex12.elf  > "Ex12.list"
    text	   data	    bss	    dec	    hex	filename
-  24088	    108	  18668	  42864	   a770	Lab3.3.elf
+  24616	    104	  18672	  43392	   a980	Ex12.elf
 Finished building: default.size.stdout
  
-Finished building: Lab3.3.list
+Finished building: Ex12.list
+ 
+15:08:23 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-size  Ex11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24616	    104	  18672	  43392	   a980	Ex11.elf
+Finished building: default.size.stdout
+ 
+15:08:24 **** Incremental Build of configuration Debug for project Ex12 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex12.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex12\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex12.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex12.elf
+ 
+arm-none-eabi-size  Ex12.elf 
+arm-none-eabi-objdump -h -S Ex12.elf  > "Ex12.list"
+   text	   data	    bss	    dec	    hex	filename
+  24616	    104	  18672	  43392	   a980	Ex12.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex12.list
+ 
+15:08:25 **** Incremental Build of configuration Debug for project Ex8 ****
+make -j8 all 
+arm-none-eabi-size  Ex8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24088	    108	  18668	  42864	   a770	Ex8.elf
+Finished building: default.size.stdout
+ 
+15:08:26 **** Incremental Build of configuration Debug for project Ex9 ****
+make -j8 all 
+arm-none-eabi-size  Ex9.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24312	    108	  18668	  43088	   a850	Ex9.elf
+Finished building: default.size.stdout
+ 
+15:08:45 **** Incremental Build of configuration Debug for project Ex12 ****
+make -j8 all 
+arm-none-eabi-size  Ex12.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24616	    104	  18672	  43392	   a980	Ex12.elf
+Finished building: default.size.stdout
+ 
+15:14:13 **** Incremental Build of configuration Debug for project Ex9 ****
+make -j8 all 
+arm-none-eabi-size  Ex9.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24312	    108	  18668	  43088	   a850	Ex9.elf
+Finished building: default.size.stdout
+ 
+15:16:46 **** Incremental Build of configuration Debug for project Ex10 ****
+make -j8 all 
+arm-none-eabi-size  Ex10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24280	    108	  18668	  43056	   a830	Ex10.elf
+Finished building: default.size.stdout
+ 
+15:19:21 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24600	    104	  18672	  43376	   a970	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+15:21:11 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24456	    104	  18672	  43232	   a8e0	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+15:24:02 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24492	    104	  18664	  43260	   a8fc	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+15:25:10 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24492	    104	  18664	  43260	   a8fc	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+15:27:08 **** Incremental Build of configuration Debug for project Ex10 ****
+make -j8 all 
+arm-none-eabi-size  Ex10.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24280	    108	  18668	  43056	   a830	Ex10.elf
+Finished building: default.size.stdout
+ 
+15:27:08 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24616	    104	  18672	  43392	   a980	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
+ 
+15:27:10 **** Incremental Build of configuration Debug for project Ex12 ****
+make -j8 all 
+arm-none-eabi-size  Ex12.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24616	    104	  18672	  43392	   a980	Ex12.elf
+Finished building: default.size.stdout
+ 
+15:27:10 **** Incremental Build of configuration Debug for project Ex9 ****
+make -j8 all 
+arm-none-eabi-size  Ex9.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24312	    108	  18668	  43088	   a850	Ex9.elf
+Finished building: default.size.stdout
+ 
+15:27:12 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-size  Ex11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24616	    104	  18672	  43392	   a980	Ex11.elf
+Finished building: default.size.stdout
+ 
+15:28:07 **** Incremental Build of configuration Debug for project Ex11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Ex11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Ex11.elf
+ 
+arm-none-eabi-size  Ex11.elf 
+arm-none-eabi-objdump -h -S Ex11.elf  > "Ex11.list"
+   text	   data	    bss	    dec	    hex	filename
+  24616	    104	  18672	  43392	   a980	Ex11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex11.list
  

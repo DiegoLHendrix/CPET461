@@ -62,34 +62,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := Lab3.3
+BUILD_ARTIFACT_NAME := Ex8
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-Lab3.3.elf \
+Ex8.elf \
 
 MAP_FILES += \
-Lab3.3.map \
+Ex8.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-Lab3.3.list \
+Ex8.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: Lab3.3.elf secondary-outputs
+main-build: Ex8.elf secondary-outputs
 
 # Tool invocations
-Lab3.3.elf Lab3.3.map: $(OBJS) $(USER_OBJS) C:\GitHub\CPET_461\Labs\Lab3.3\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "Lab3.3.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Lab3.3\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab3.3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Ex8.elf Ex8.map: $(OBJS) $(USER_OBJS) C:\GitHub\CPET_461\Labs\Lab3.3\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "Ex8.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Lab3.3\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -98,14 +98,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Lab3.3.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Lab3.3.list"
+Ex8.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Ex8.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) Lab3.3.elf Lab3.3.list Lab3.3.map default.size.stdout
+	-$(RM) Ex8.elf Ex8.list Ex8.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

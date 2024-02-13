@@ -1,0 +1,10 @@
+15:27:10 **** Incremental Build of configuration Debug for project Ex9 ****
+make -j8 all 
+arm-none-eabi-size  Ex9.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24312	    108	  18668	  43088	   a850	Ex9.elf
+Finished building: default.size.stdout
+ 
+
+15:27:11 Build Finished. 0 errors, 0 warnings. (took 368ms)
+

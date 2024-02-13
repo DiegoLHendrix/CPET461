@@ -499,12 +499,12 @@ void StartFlashGreenLedTask(void const * argument)
   for(;;)
   {
 	  /*Exercise 8*/
-	  HAL_GPIO_WritePin(GPIOD, GREEN_LED, GPIO_PIN_SET);//green on
+	  HAL_GPIO_TogglePin(GPIOD, LED_GREEN_Pin);//green on
 	  osSemaphoreWait(CriticalResourceSemaphoreHandle, osWaitForever);//semaphore P (i.e. wait)
 	  Access_Function();//access shared data
 	  osSemaphoreRelease(CriticalResourceSemaphoreHandle);//semaphore V (i.e. signal)
 	  osDelay(200);//200 Millisecond delay
-	  HAL_GPIO_WritePin(GPIOD, GREEN_LED, GPIO_PIN_RESET);//green off
+	  HAL_GPIO_TogglePin(GPIOD, LED_GREEN_Pin);//green off
 	  osDelay(200);//200 Millisecond delay
 	  /**/
   }
@@ -525,12 +525,12 @@ void StartFlashRedLedTask(void const * argument)
   for(;;)
   {
 	  /*Exercise 8*/
-	  HAL_GPIO_WritePin(GPIOD, RED_LED, GPIO_PIN_SET);//red on
+	  HAL_GPIO_TogglePin(GPIOD, LED_RED_Pin);//red on
 	  osSemaphoreWait(CriticalResourceSemaphoreHandle, osWaitForever);//semaphore P (i.e. wait)
 	  Access_Function();//access shared data
 	  osSemaphoreRelease(CriticalResourceSemaphoreHandle);//semaphore V (i.e. signal)
 	  osDelay(550);//550 Millisecond delay
-	  HAL_GPIO_WritePin(GPIOD, RED_LED, GPIO_PIN_RESET);//red off
+	  HAL_GPIO_TogglePin(GPIOD, LED_RED_Pin);//red off
 	  osDelay(550);//550 Millisecond delay
 	  /**/
   }
