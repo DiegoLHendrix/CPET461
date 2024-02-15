@@ -6,8 +6,8 @@
 ../Core/Src/main.c:316:13:MX_I2S3_Init	8	static
 ../Core/Src/main.c:350:13:MX_SPI1_Init	8	static
 ../Core/Src/main.c:388:13:MX_GPIO_Init	56	static
-../Core/Src/main.c:478:6:flashLED	32	static
-../Core/Src/main.c:492:6:Access_Function	24	static
+../Core/Src/main.c:480:6:flashLED	32	static
+../Core/Src/main.c:493:6:Access_Function	24	static
 ../Core/Src/main.c:515:6:StartFlashGreenLedTask	16	static
 ../Core/Src/main.c:534:6:StartFlashRedLedTask	16	static
 ../Core/Src/main.c:554:6:StartFlashOrangeLedTask	16	static

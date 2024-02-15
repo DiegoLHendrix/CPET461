@@ -88,8 +88,8 @@ all: main-build
 main-build: Ex11.elf secondary-outputs
 
 # Tool invocations
-Ex11.elf Ex11.map: $(OBJS) $(USER_OBJS) C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "Ex11.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\GitHub\CPET_461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Ex11.elf Ex11.map: $(OBJS) $(USER_OBJS) S:\DiegoLopez_CPET461\Labs\Ex11\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "Ex11.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"S:\DiegoLopez_CPET461\Labs\Ex11\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

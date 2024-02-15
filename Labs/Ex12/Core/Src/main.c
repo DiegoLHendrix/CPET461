@@ -475,9 +475,10 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+//Do not call function to flash BLUE LED bc it will suspend the tasks after the blue led flashes
+int waitTime = (75000 * 4.5);
 void flashLED(uint16_t color){//flashes LED for 4 seconds at 10Hz
 
-	int waitTime = 750000;
 	for(int i=0;i<=40;++i){//40*100 mSec = 4 seconds
 		HAL_GPIO_WritePin(GPIOD, color, GPIO_PIN_SET);//led on
 		for(int i=0;i<waitTime;++i);//~50 mSeconds
@@ -492,7 +493,6 @@ void flashLED(uint16_t color){//flashes LED for 4 seconds at 10Hz
 void Access_Function(){
 	osMutexWait(CriticalResourceMutexHandle, osWaitForever);//Mutex lock (wait)
 
-	int waitTime = 750000;
 	for(int i=0;i<=20;++i){//20*100 mSec = 2 seconds
 		HAL_GPIO_WritePin(GPIOD, LED_BLUE_Pin, GPIO_PIN_SET);//blue on
 		for(int i=0;i<waitTime;++i);//~50 mSeconds
