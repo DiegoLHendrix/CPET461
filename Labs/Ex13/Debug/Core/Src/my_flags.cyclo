@@ -1,0 +1,3 @@
+../Core/Src/my_flags.c:12:6:Set_Flag	3
+../Core/Src/my_flags.c:24:6:Reset_Flag	3
+../Core/Src/my_flags.c:36:6:Check_Flag	3
