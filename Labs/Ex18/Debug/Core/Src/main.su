@@ -1,0 +1,15 @@
+../Core/Src/main.c:84:5:main	104	static
+../Core/Src/main.c:173:6:SystemClock_Config	88	static
+../Core/Src/main.c:218:6:PeriphCommonClock_Config	32	static
+../Core/Src/main.c:239:13:MX_I2C1_Init	8	static
+../Core/Src/main.c:273:13:MX_I2S2_Init	8	static
+../Core/Src/main.c:307:13:MX_I2S3_Init	8	static
+../Core/Src/main.c:341:13:MX_SPI1_Init	8	static
+../Core/Src/main.c:379:13:MX_GPIO_Init	56	static
+../Core/Src/main.c:469:6:Flash10Hz	24	static
+../Core/Src/main.c:480:6:Flash1Hz	24	static
+../Core/Src/main.c:499:6:StartFlashGreenLedTask	24	static
+../Core/Src/main.c:524:6:StartFlashRedLedTask	24	static
+../Core/Src/main.c:548:6:FlashingRateControlTask	24	static
+../Core/Src/main.c:575:6:HAL_TIM_PeriodElapsedCallback	16	static
+../Core/Src/main.c:592:6:Error_Handler	4	static,ignoring_inline_asm

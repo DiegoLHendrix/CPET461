@@ -1,0 +1,5 @@
+../Core/Src/PoolObject.c:24:6:InitSemaphores	8	static
+../Core/Src/PoolObject.c:31:6:SetGreenFlashRate	16	static
+../Core/Src/PoolObject.c:37:5:GetGreenFlashRate	4	static
+../Core/Src/PoolObject.c:42:6:SetRedFlashRate	16	static
+../Core/Src/PoolObject.c:48:5:GetRedFlashRate	4	static
