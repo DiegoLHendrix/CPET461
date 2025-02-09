@@ -32,6 +32,7 @@ void SetGreenFlashRate(int x)
 {
 	xSemaphoreTake(CriticalResourceSemaphore, portMAX_DELAY);
 	FlashingDataPool.GreenTaskFlashRate = x;
+	xSemaphoreGive(CriticalResourceSemaphore);
 }
 
 int GetGreenFlashRate(void)
@@ -43,6 +44,7 @@ void SetRedFlashRate(int x)
 {
 	xSemaphoreTake(CriticalResourceSemaphore, portMAX_DELAY);
 	FlashingDataPool.RedTaskFlashRate = x;
+	xSemaphoreGive(CriticalResourceSemaphore);
 }
 
 int GetRedFlashRate(void)

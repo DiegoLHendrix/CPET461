@@ -466,27 +466,37 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void Flash10Hz(uint16_t color, int time)
+/**
+ * Function that decides what Hz to flash the led
+ * x = Hz, color = led color, time = how long to run for
+ */
+void FlashLED(int x, uint16_t color, int time)
 {
-	for(int i=0;i<time*10;++i)
+	//Flash at 1Hz
+	if(x==1)
 	{
-		HAL_GPIO_WritePin(GPIOD, color, GPIO_PIN_SET);
-		osDelay(50);
-		HAL_GPIO_WritePin(GPIOD, color, GPIO_PIN_RESET);
-		osDelay(50);
+		for(int i=0;i<time;++i)
+		{
+			HAL_GPIO_WritePin(GPIOD, color, GPIO_PIN_SET);
+			osDelay(500);
+			HAL_GPIO_WritePin(GPIOD, color, GPIO_PIN_RESET);
+			osDelay(500);
+		}
+
+	}
+	//Flash at 10Hz
+	else if(x==10)
+	{
+		for(int i=0;i<time*10;++i)
+		{
+			HAL_GPIO_WritePin(GPIOD, color, GPIO_PIN_SET);
+			osDelay(50);
+			HAL_GPIO_WritePin(GPIOD, color, GPIO_PIN_RESET);
+			osDelay(50);
+		}
 	}
 }
 
-void Flash1Hz(uint16_t color, int time)
-{
-	for(int i=0;i<time;++i)
-	{
-		HAL_GPIO_WritePin(GPIOD, color, GPIO_PIN_SET);
-		osDelay(500);
-		HAL_GPIO_WritePin(GPIOD, color, GPIO_PIN_RESET);
-		osDelay(500);
-	}
-}
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_StartFlashGreenLedTask */
@@ -499,16 +509,16 @@ void Flash1Hz(uint16_t color, int time)
 void StartFlashGreenLedTask(void const * argument)
 {
   /* USER CODE BEGIN 5 */
-	int x = GetGreenFlashRate();
+	int x, y;
+	InitSemaphores();
   /* Infinite loop */
-  for(;;)
+	for(;;)
   {
-	  if(x == 1){
-		  Flash1Hz(LED_GREEN_Pin, 10);
-	  }
-	  else if (x == 10){
-		  Flash10Hz(LED_GREEN_Pin, 10);
-	  }
+	  x = GetGreenFlashRate();//Get 10 Hz
+	  FlashLED(x, LED_GREEN_Pin, 10);
+
+	  y = GetGreenFlashRate();//Get 1 Hz
+	  FlashLED(y, LED_GREEN_Pin, 10);
   }
   /* USER CODE END 5 */
 }
@@ -523,16 +533,16 @@ void StartFlashGreenLedTask(void const * argument)
 void StartFlashRedLedTask(void const * argument)
 {
   /* USER CODE BEGIN StartFlashRedLedTask */
-	int x = GetRedFlashRate();
+	int x;
+	InitSemaphores();
   /* Infinite loop */
   for(;;)
   {
-	  if(x == 1){
-		  Flash1Hz(LED_RED_Pin, 6);
-	  }
-	  else if (x == 10){
-		  Flash10Hz(LED_RED_Pin, 6);
-	  }
+	  x = GetRedFlashRate();//Get 1 Hz
+	  FlashLED(x, LED_RED_Pin, 6);
+
+	  x = GetRedFlashRate();//Get 10 Hz
+	  FlashLED(x, LED_RED_Pin, 6);
   }
   /* USER CODE END StartFlashRedLedTask */
 }
@@ -547,18 +557,17 @@ void StartFlashRedLedTask(void const * argument)
 void FlashingRateControlTask(void const * argument)
 {
   /* USER CODE BEGIN FlashingRateControlTask */
+	InitSemaphores();
   /* Infinite loop */
-	int x = 1;
-	int y = 10;
   for(;;)
   {
     osDelay(8000);
-    SetGreenFlashRate(x);
-    SetRedFlashRate(y);
+    SetGreenFlashRate(10);
+    SetRedFlashRate(1);
 
     osDelay(8000);
-    SetGreenFlashRate(y);
-    SetRedFlashRate(x);
+    SetGreenFlashRate(1);
+    SetRedFlashRate(10);
   }
   /* USER CODE END FlashingRateControlTask */
 }

@@ -1,0 +1,17 @@
+../Core/Src/main.c:91:5:main	1
+../Core/Src/main.c:196:6:SystemClock_Config	3
+../Core/Src/main.c:241:6:PeriphCommonClock_Config	2
+../Core/Src/main.c:262:13:MX_I2C1_Init	2
+../Core/Src/main.c:296:13:MX_I2S2_Init	2
+../Core/Src/main.c:330:13:MX_I2S3_Init	2
+../Core/Src/main.c:364:13:MX_SPI1_Init	2
+../Core/Src/main.c:402:13:MX_GPIO_Init	1
+../Core/Src/main.c:492:6:RendezvousBarrier	4
+../Core/Src/main.c:509:6:Flash10Hz	2
+../Core/Src/main.c:520:6:Flash5Hz	2
+../Core/Src/main.c:531:6:Flash1Hz	2
+../Core/Src/main.c:550:6:StartFlashGreenLedTask	1
+../Core/Src/main.c:577:6:StartFlashRedLedTask	1
+../Core/Src/main.c:607:6:StartFlashBlueLedTask	1
+../Core/Src/main.c:636:6:HAL_TIM_PeriodElapsedCallback	2
+../Core/Src/main.c:653:6:Error_Handler	1

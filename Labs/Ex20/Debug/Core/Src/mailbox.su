@@ -1,0 +1,3 @@
+../Core/Src/mailbox.c:19:6:InitMailBox	32	static
+../Core/Src/mailbox.c:38:6:Post	16	static
+../Core/Src/mailbox.c:45:5:Pend	16	static
